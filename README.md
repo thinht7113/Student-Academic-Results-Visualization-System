@@ -97,7 +97,11 @@ Tạo file `backend/.env`:
 GEMINI_API_KEY=YOUR_API_KEY_HERE
 GEMINI_MODEL=gemini-2.5-flash-lite
 ```
+
+
+
 ---
+
 ## 📂 Cấu trúc thư mục
 
 ```
