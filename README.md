@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Student Performance Visualization & AI Advisor
 **(Phần mềm Desktop Trực quan hóa Kết quả Học tập & Cố vấn AI)**
 
@@ -160,12 +160,7 @@ Tạo file `backend/.env`:
 ```env
 GEMINI_API_KEY=YOUR_API_KEY_HERE
 GEMINI_MODEL=gemini-2.5-flash-lite
-SECRET_KEY=your-secret-key
-JWT_SECRET_KEY=your-jwt-secret
 ```
-
-> ⚠️ **Lưu ý**: File `.env` và thư mục `secrets/` KHÔNG được commit vào git.
-
 ---
 
 ## 📂 Cấu trúc thư mục
@@ -213,4 +208,4 @@ Score Management Project/
 ```bash
 python -m backend.seed
 ```
->>>>>>> e2da918 (feat: implement dark mode across all screens and widgets)
+
