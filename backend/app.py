@@ -668,6 +668,7 @@ def create_app() -> Flask:
     )
 
     @app.post("/api/advisor/gemini")
+    @jwt_required()
     def advisor_gemini():
         try:
             data = request.get_json(force=True) or {}

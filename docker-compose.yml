@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: score-management-api
+    ports:
+      - "5000:5000"
+    env_file:
+      - backend/.env
+    environment:
+      - FLASK_ENV=production
+      - SECRET_KEY=${SECRET_KEY:-super-secret-key-change-me}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-jwt-secret-change-me}
+    volumes:
+      # Persist SQLite database outside the container
+      - ./backend/app.db:/app/backend/app.db
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/healthz')" ]
+      interval: 30s
+      timeout: 5s
+      retries: 3

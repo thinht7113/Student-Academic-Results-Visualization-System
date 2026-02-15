@@ -1,0 +1,49 @@
+# ── Python ──
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.spec
+.venv/
+venv/
+
+# ── Environment & Secrets ──
+.env
+secrets/
+*.key
+
+# ── Database ──
+*.db
+*.db-shm
+*.db-wal
+*.sqbpro
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*.code-workspace
+
+# ── OS ──
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ── Flutter/Dart ──
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+
+# ── Logs ──
+logs/
+*.log
+
+# ── Misc ──
+*.bak
+*.tmp
+analyze_output.txt
